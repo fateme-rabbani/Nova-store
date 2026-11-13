@@ -9,6 +9,4 @@ export enum ProductSort {
   Default = "default",
   PriceAscending = "priceAscending",
   PriceDescending = "priceDescending",
-  TitleAscending = "titleAscending",
-  TitleDescending = "titleDescending",
 }
