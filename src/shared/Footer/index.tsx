@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Camera, Send } from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 import logo from "@/assets/Icons/logo-dark.svg";
 import { Container, Content, Logo, Links, Socials, Copyright } from "./styles";
 
-export default async function Footer() {
-  const locale = await getLocale();
-  const t = await getTranslations("Footer");
+export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations("Footer");
 
   return (
     <Container>
